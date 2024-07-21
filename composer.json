@@ -18,7 +18,8 @@
         "php": "^8.2.0",
         "eventsauce/eventsauce": "^3.6",
         "illuminate/database": "^11.5",
-        "laravel-zero/framework": "^11.0.0"
+        "laravel-zero/framework": "^11.0.0",
+        "ext-pdo": "*"
     },
     "require-dev": {
         "eventsauce/pest-utilities": "^3.4",
