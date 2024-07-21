@@ -4,6 +4,7 @@ use Domain\Aggregates\Generation\Actions\AcquireGeneration;
 use Domain\Aggregates\Generation\Events\GenerationAcquired;
 use Domain\Aggregates\Generation\Exceptions\GenerationException;
 use Domain\Tests\Aggregates\Generation\GenerationTestCase;
+
 use function EventSauce\EventSourcing\PestTooling\expectToFail;
 use function EventSauce\EventSourcing\PestTooling\given;
 use function EventSauce\EventSourcing\PestTooling\then;

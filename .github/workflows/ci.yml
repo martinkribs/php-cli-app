@@ -70,5 +70,11 @@ jobs:
         with:
           dependency-versions: ${{ matrix.dependency-versions }}
 
-      - name: Run test suite
+      - name: Install Xdebug
+        run: sudo apt-get install -y php-xdebug
+
+      - name: Enable Xdebug
+        run: echo 'zend_extension=xdebug.so' | sudo tee -a /etc/php/$(php -r 'echo PHP_MAJOR_VERSION . "." . PHP_MINOR_VERSION;')/cli/conf.d/20-xdebug.ini
+
+      - name: Run tests with coverage
         run: vendor/bin/pest --coverage --min=100
