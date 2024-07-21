@@ -23,9 +23,7 @@ class InspireCommand extends Command
      */
     protected $description = 'Display an inspiring quote';
 
-    /**
-     * Execute the console command.
-     */
+    /** Execute the console command. */
     public function handle(): void
     {
         render(<<<'HTML'
@@ -38,9 +36,7 @@ class InspireCommand extends Command
         HTML);
     }
 
-    /**
-     * Define the command's schedule.
-     */
+    /** Define the command's schedule. */
     public function schedule(Schedule $schedule): void
     {
         // $schedule->command(static::class)->everyMinute();

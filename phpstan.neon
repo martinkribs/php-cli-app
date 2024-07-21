@@ -1,0 +1,14 @@
+parameters:
+    level: 9
+
+    paths:
+        - app
+        - domain/src
+
+    checkMissingCallableSignature: true
+
+    type_coverage:
+        return_type: 100
+        param_type: 100
+        property_type: 100
+        print_suggestions: true

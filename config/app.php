@@ -11,7 +11,7 @@ return [
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
     |
-    */
+     */
 
     'name' => 'Php-cli-app',
 
@@ -24,7 +24,7 @@ return [
     | in. You may want to follow the "Semantic Versioning" - Given a version
     | number MAJOR.MINOR.PATCH when an update happens: https://semver.org.
     |
-    */
+     */
 
     'version' => app('git.version'),
 
@@ -38,9 +38,9 @@ return [
     | services the application utilizes. This can be overridden using
     | the global command line "--env" option when calling commands.
     |
-    */
+     */
 
-    'env' => 'development',
+    'env' => env('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ return [
     | request to your application. Feel free to add your own services to
     | this array to grant expanded functionality to your applications.
     |
-    */
+     */
 
     'providers' => [
         App\Providers\AppServiceProvider::class,
